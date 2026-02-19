@@ -22,6 +22,10 @@ def get_raw(file_list, destination_directory):
         filename = file_info['filename']
         local_filepath = os.path.join(destination_directory, filename)
 
+        if os.path.exists(local_filepath) and os.path.getsize(local_filepath) > 0:
+            print(f"Skipping {filename}; already exists.")
+            continue
+
         try:
             response = requests.get(url, stream=True)
             response.raise_for_status()  # Raise an exception for bad status codes
