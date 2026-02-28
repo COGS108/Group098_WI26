@@ -194,3 +194,8 @@ data/*/*.SQ*
 
 # jupyter
 .ipynb_checkpoints/
+
+# conflict backup notebooks
+*.OURS.ipynb
+*.THEIRS.ipynb
+ours_*.ipynb
