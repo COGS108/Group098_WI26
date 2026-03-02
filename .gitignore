@@ -188,3 +188,14 @@ data/*.sq*
 data/*/*.sq*
 data/*.SQ*
 data/*/*.SQ*
+
+# data
+*.csv
+
+# jupyter
+.ipynb_checkpoints/
+
+# conflict backup notebooks
+*.OURS.ipynb
+*.THEIRS.ipynb
+ours_*.ipynb
