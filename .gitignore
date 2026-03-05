@@ -199,3 +199,6 @@ data/*/*.SQ*
 *.OURS.ipynb
 *.THEIRS.ipynb
 ours_*.ipynb
+
+# png outputs
+outputs/
